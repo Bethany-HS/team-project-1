@@ -15,7 +15,13 @@ namespace command_line_input_exercises_pairs
         */
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Please enter the amount of the bill: ");
+            decimal bill = decimal.Parse(Console.ReadLine());
+
+            Console.Write("Please enter the amount tendered: ");
+            decimal tendered = decimal.Parse(Console.ReadLine());
+
+            Console.Write($"The change required is {tendered - bill}");
         }
     }
 }
